@@ -22,18 +22,23 @@
 
 html, body {
     background: var(--pageBackground);
-    display: grid;
-    height: 100%;
-    place-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.wrapper {
-    width: 380px;
-    background: var(--containerBackground);
-    border-radius: 10px;
+body{
+    min-height: 100vh;
 }
 
-.wrapper .title {
+.img {
+    width: 100%;
+}
+
+.box{
+    display: flex;
+}
+
+.title {
     text-align: center;
     line-height: 80px;
     height: 40px;
@@ -41,11 +46,8 @@ html, body {
     font-weight: 600;
 }
 
-.wrapper form {
-    padding: 30px 20px 25px 20px;
-}
 
-.wrapper form .row {
+/* .wrapper form .row {
     height: 45px;
     margin-bottom: 15px;
 }
@@ -59,15 +61,14 @@ html, body {
     padding-left: 15px;
     border-radius: 5px;
     border: 1px solid #D3D3D3;
-}
+} */
 
-.wrapper form .check {
+form .check {
     padding: 0 0 20px 0;
     font-size: 16px;
     border-radius: 5px;
 }
-
-.wrapper form .button input {
+.button{
     font-size: 18px;
     font-weight: 550;
     color: var(--fontColor0);
@@ -80,32 +81,32 @@ html, body {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.wrapper form .pass {
+form .pass {
     margin: 30px 0 15px 0;
     text-align: center;
 }
 
-.wrapper form .pass a {
+form .pass a {
     color: var(--fontCOlor1);
     text-decoration: none;
 }
 
-.wrapper form .acc {
+form .acc {
     margin: 10px 0 15px 0;
     text-align: center;
 }
 
-.wrapper form .acc a {
+form .acc a {
     color: var(--fontCOlor1);
     text-decoration: none;
 }
 
-.wrapper form .back {
+form .back {
     margin: 10px 0 15px 0;
     text-align: center;
 }
 
-.wrapper form .back a {
+form .back a {
     color: var(--fontCOlor1);
     text-decoration: none;
 }
