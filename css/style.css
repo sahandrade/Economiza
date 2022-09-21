@@ -1,0 +1,115 @@
+/* variáveis */
+:root {
+    --pageBackground: #2FBF8D;
+    --containerBackground: #FFFFFF;
+    --buttonBackground: #FF4062;
+    --fontColor: #21292E;
+    --fontColor0: #FFFFFF;
+    --fontCOlor1: #2FBF8D;
+}
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,600&display=swap');
+
+/* estilos */
+* {
+    font-family: 'Roboto Serif', serif;
+    color: var(--fontColor);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: var(--pageBackground);
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.wrapper {
+    width: 380px;
+    background: var(--containerBackground);
+    border-radius: 10px;
+}
+
+.wrapper .title {
+    text-align: center;
+    line-height: 80px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wrapper form {
+    padding: 30px 20px 25px 20px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.wrapper form .row input {
+    font-weight: 500;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+}
+
+.wrapper form .check {
+    padding: 0 0 20px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.wrapper form .button input {
+    font-size: 18px;
+    font-weight: 550;
+    color: var(--fontColor0);
+    background: var(--buttonBackground);
+    height: 40px;
+    width: 100%;
+    padding-left: 0px;
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper form .pass {
+    margin: 30px 0 15px 0;
+    text-align: center;
+}
+
+.wrapper form .pass a {
+    color: var(--fontCOlor1);
+    text-decoration: none;
+}
+
+.wrapper form .acc {
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+
+.wrapper form .acc a {
+    color: var(--fontCOlor1);
+    text-decoration: none;
+}
+
+.wrapper form .back {
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+
+.wrapper form .back a {
+    color: var(--fontCOlor1);
+    text-decoration: none;
+}
+
+/* mobile */
+
+/* web e outros */
